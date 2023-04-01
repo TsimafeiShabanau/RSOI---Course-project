@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Shop.View.Controllers.RegistrationController">
+   <TextField fx:id="login" layoutX="100.0" layoutY="80.0" promptText="Логин">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </TextField>
+   <PasswordField fx:id="password" layoutX="100.0" layoutY="120.0" promptText="Пароль">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </PasswordField>
+   <TextField fx:id="name" layoutX="100.0" layoutY="160.0" promptText="Имя">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </TextField>
+   <TextField fx:id="email" layoutX="100.0" layoutY="200.0" promptText="Электронная почта">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </TextField>
+   <TextField fx:id="phoneNum" layoutX="100.0" layoutY="240.0" promptText="Номер телефона">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </TextField>
+   <Button layoutX="100.0" layoutY="282.0" mnemonicParsing="false" onMouseClicked="#Register" prefHeight="37.0" prefWidth="66.0" text="Register" />
+   <Button layoutX="200.0" layoutY="282.0" mnemonicParsing="false" onMouseClicked="#Back" prefHeight="37.0" prefWidth="59.0" text="Cancel" />
+   <Label fx:id="ErrorField" layoutX="16.0" layoutY="329.0" prefHeight="64.0" prefWidth="322.0" textFill="RED" />
+   <Label layoutX="58.0" layoutY="240.0" prefHeight="30.0" prefWidth="41.0" text="+375">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
+</AnchorPane>

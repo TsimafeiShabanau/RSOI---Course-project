@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Shop.View.Controllers.OrdersController">
+   <children>
+      <ListView fx:id="listView" layoutX="30.0" layoutY="14.0" prefHeight="435.0" prefWidth="550.0" />
+      <Button layoutX="470.0" layoutY="452.0" mnemonicParsing="false" onMouseClicked="#Back" prefHeight="34.0" prefWidth="116.0" text="Назад" />
+      <Button onMouseClicked="#Report" layoutX="37.0" layoutY="452.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="128.0" text="Отчет" />
+   </children>
+</AnchorPane>

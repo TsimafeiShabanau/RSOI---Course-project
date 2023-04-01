@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Shop.View.Controllers.AdminController">
+   <children>
+      <TabPane layoutX="14.0" layoutY="14.0" prefHeight="334.0" prefWidth="572.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Пользователи">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="users" prefHeight="305.0" prefWidth="572.0">
+                          <columns>
+                            <TableColumn fx:id="userName" prefWidth="195.0" text="Имя" />
+                            <TableColumn fx:id="userLogin" prefWidth="154.0" text="Логин" />
+                              <TableColumn fx:id="userMail" prefWidth="163.0" text="Почта" />
+                              <TableColumn fx:id="userRole" prefWidth="59.0" text="Роль" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Заказы">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="orders" prefHeight="306.0" prefWidth="572.0">
+                          <columns>
+                            <TableColumn fx:id="orderNumber" prefWidth="58.0" text="Номер" />
+                            <TableColumn fx:id="orderPrice" prefWidth="109.0" text="Стоимость" />
+                              <TableColumn fx:id="orderDate" prefWidth="79.0" text="Дата" />
+                              <TableColumn fx:id="orderStatus" text="Статус" />
+                              <TableColumn fx:id="orderCustomerName" prefWidth="116.0" text="Покупатель" />
+                              <TableColumn fx:id="orderCustomerMail" prefWidth="129.0" text="Почта" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Статистика">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                        <children>
+                            <LineChart fx:id="lineChart" prefHeight="306.0" prefWidth="572.0" VBox.vgrow="ALWAYS">
+                                <xAxis>
+                                    <CategoryAxis autoRanging="false" side="BOTTOM" tickLabelGap="1.0" tickLength="1.0" fx:id="xAxis" />
+                                </xAxis>
+                                <yAxis>
+                                    <NumberAxis fx:id="yAxis" autoRanging="false" minorTickLength="1.0" side="LEFT" tickLabelGap="1.0" tickUnit="1.0" upperBound="10.0" />
+                                </yAxis>
+                            </LineChart>
+                        </children>
+                    </AnchorPane>
+                </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Button layoutX="449.0" layoutY="354.0" mnemonicParsing="false" onMouseClicked="#Back" prefHeight="32.0" prefWidth="87.0" text="Назад" />
+   </children>
+</AnchorPane>

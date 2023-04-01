@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Shop.View.Controllers.MainMenuController">
+    <Button onMouseClicked="#products" layoutX="195.0" layoutY="80.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0" text="Поиск товаров">
+        <font>
+          <Font size="14.0" />
+        </font>
+    </Button>
+    <Button onMouseClicked="#orders" layoutX="195.0" layoutY="140.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0" text="Список заказов">
+        <font>
+          <Font size="14.0" />
+        </font>
+    </Button>
+    <Button onMouseClicked="#cart" layoutX="195.0" layoutY="200.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0" text="Корзина">
+        <font>
+          <Font size="14.0" />
+        </font>
+    </Button>
+   <Button fx:id="Management" onMouseClicked="#adminMenu" layoutX="195.0" layoutY="260.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0" text="Управление">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Button>
+</AnchorPane>

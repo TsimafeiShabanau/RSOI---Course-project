@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="488.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Shop.View.Controllers.ProductsListController">
+   <children>
+      <TableView fx:id="Table" layoutY="65.0" prefHeight="350.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="Name" prefWidth="75.0" text="Название" />
+          <TableColumn fx:id="Description" prefWidth="308.0" text="Описание" />
+            <TableColumn fx:id="Price" prefWidth="70.0" text="Стоимость" />
+            <TableColumn fx:id="VendorName" prefWidth="146.0" text="Прозводитель" />
+        </columns>
+      </TableView>
+      <Label layoutX="32.0" layoutY="4.0" prefHeight="25.0" prefWidth="175.0" text="Поиск">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="search" layoutX="32.0" layoutY="27.0" promptText="Поиск...">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button layoutX="215.0" layoutY="27.0" mnemonicParsing="false" onMouseClicked="#Find" prefHeight="30.0" prefWidth="91.0" text="Найти">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="480.0" layoutY="450.0" mnemonicParsing="false" onMouseClicked="#back" prefHeight="30.0" prefWidth="91.0" text="Назад" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Shop.View.Controllers.CartController">
+   <children>
+      <TableView fx:id="table" layoutX="56.0" layoutY="14.0" prefHeight="336.0" prefWidth="375.0">
+        <columns>
+          <TableColumn fx:id="Product" prefWidth="217.0" text="Продукт" />
+            <TableColumn fx:id="Amount" prefWidth="75.0" text="Количество" />
+            <TableColumn fx:id="Price" prefWidth="56.0" text="Цена" />
+        </columns>
+      </TableView>
+      <Label layoutX="437.0" layoutY="24.0" prefHeight="25.0" prefWidth="149.0" text="Количество" />
+      <TextField fx:id="changeAmount" layoutX="437.0" layoutY="49.0" prefHeight="25.0" prefWidth="67.0" />
+      <Button layoutX="440.0" layoutY="95.0" mnemonicParsing="false" onMouseClicked="#accept" prefHeight="25.0" prefWidth="135.0" text="Выбрать" />
+      <Button layoutX="440.0" layoutY="133.0" mnemonicParsing="false" onMouseClicked="#delete" prefHeight="25.0" prefWidth="135.0" text="Удалить из корзины" />
+      <Button layoutX="469.0" layoutY="405.0" mnemonicParsing="false" onMousePressed="#back" prefHeight="31.0" prefWidth="99.0" text="Назад" />
+      <Label layoutX="77.0" layoutY="395.0" prefHeight="31.0" prefWidth="116.0" text="Общая стоимость" />
+      <Label fx:id="totalPriceLabel" layoutX="193.0" layoutY="397.0" prefHeight="25.0" prefWidth="85.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button onMouseClicked="#AcceptOrder" layoutX="437.0" layoutY="195.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="127.0" text="Подтвердить заказ" />
+   </children>
+</AnchorPane>

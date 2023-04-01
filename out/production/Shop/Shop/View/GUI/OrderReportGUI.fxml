@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Shop.View.Controllers.OrderReportController">
+   <children>
+      <Button layoutX="35.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#Save" prefHeight="25.0" prefWidth="144.0" text="Сохранить" />
+      <Button layoutX="412.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#Back" prefHeight="25.0" prefWidth="154.0" text="Назад" />
+      <Label fx:id="Label" layoutX="154.0" layoutY="14.0" prefHeight="332.0" prefWidth="422.0">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
