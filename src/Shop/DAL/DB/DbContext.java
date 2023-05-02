@@ -11,6 +11,7 @@ import java.util.Base64;
 public class DbContext
 {
     private Connection connection;
+    private String email;
 
     public DbContext(String connectionString, String user, String password) throws ClassNotFoundException, SQLException
     {
@@ -28,7 +29,7 @@ public class DbContext
         uof.getUsers().Create(new User(0, "makss", Base64.getEncoder().encodeToString(String.format("1311").getBytes()), "maksOrso@gmail.com", new Role(2, "user")));
         uof.getUsers().Create(new User(0, "agonn", Base64.getEncoder().encodeToString(String.format("yan").getBytes()), "agoniamun@gmail.com", new Role(2, "user")));
         uof.getUsers().Create(new User(0, "sofi", Base64.getEncoder().encodeToString(String.format("claps").getBytes()), "sofi563zar@mail.ru", new Role(2, "user")));
-        uof.getUsers().Create(new User(0,"pashka", Base64.getEncoder().encodeToString(String.format("qwerty").getBytes()), "pavelMur@gmail.com", new Role(1, "admin")));
+        uof.getUsers().Create(new User(0,"pashka", Base64.getEncoder().encodeToString(String.format("qwerty").getBytes()), email, new Role(1, "admin")));
 
         uof.getCustomers().Create(new Customer(0, "Максим Орсов", "+375294356689", new User(40, "", "", "", null)));
         uof.getCustomers().Create(new Customer(0, "Агния Мун", "+375298337857", new User(41, "", "", "", null)));
